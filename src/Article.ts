@@ -12,4 +12,8 @@ export class Article {
     this.notice = notice;
     this.noticeIsHidden = noticeIsHidden;
   }
+
+  forHash() {
+    return {title: this.title, price: this.price};
+  }
 }
